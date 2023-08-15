@@ -1,0 +1,351 @@
+* {
+  font-family: "Jost", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  border: 0;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 9%;
+  z-index: 2;
+}
+.header__logo {
+  margin-top: 22px;
+}
+.nav ul li {
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 41px;
+  margin-right: 35px;
+  align-items: center;
+  display: inline-block;
+  font-weight: 600;
+  color: white;
+}
+.header__nav-active {
+  border-bottom: 2px solid white;
+}
+.header__length {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 41px;
+}
+.header__length-ru {
+  color: #b7b7b7;
+}
+.header__length-en {
+  color: white;
+}
+.intro {
+  background-image: url(/img/road-g9875459d1_1920\ 1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 217px 0 400px 0;
+  position: relative;
+}
+.intro h1 {
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  width: 70%;
+  margin-bottom: 53px;
+}
+.intro button {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  background: #db2512;
+  padding: 11px 48px;
+}
+.main__boxs {
+  display: flex;
+  position: absolute;
+  bottom: -9%;
+  left: 9%;
+  gap: 21px;
+}
+.main__box {
+  background: #fff;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+  padding: 70px 48px 37px 39px;
+  min-width: 386px;
+  position: relative;
+}
+.main__box p {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.main__box span {
+  color: #b7b7b7;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.main__box::before {
+  content: "";
+  background-image: url(/public/images/call-1-iphone.svg);
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  background-repeat: no-repeat;
+}
+.main__box-calendar::before {
+  content: "";
+  background-image: url(/public/images/calendar-2-calendar.svg);
+}
+.main__box-location::before {
+  content: "";
+  background-image: url(/public/images/maps-and-flags-1.svg);
+}
+.service {
+  margin: 200px auto 98px auto;
+}
+.service h2 {
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4.5px;
+}
+.service a {
+  color: #000;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration-line: underline;
+  margin-top: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2.25px;
+}
+.services__img {
+  display: flex;
+  gap: 21px;
+  margin-top: 60px;
+  justify-content: space-between;
+}
+.service__img p {
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4.6px;
+}
+.service__img {
+  position: relative;
+}
+.overlau {
+  background: rgba(0, 0, 0, 0.7);
+  height: 92.8%;
+  width: 100%;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.service__img:hover .overlau {
+  display: block;
+}
+
+.service__img:hover .overlau::before {
+  content: url(/public/images/plus-11111111111.png);
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50;
+  bottom: 40%;
+  left: 40%;
+  right: 50%;
+  transform: translate(-50% -50%);
+  z-index: 2;
+}
+
+.service__img:hover .overlau::after {
+  content: "ANNUAL CHECKUPS FROM YOUR PHYSICIAN KEEP YOU IN GOOD HEALTH";
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 4.14px;
+  color: white;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  width: 269px;
+}
+.information {
+  background: #171616;
+}
+.information__inner {
+  display: flex;
+  padding-top: 117px;
+  gap: 182px;
+  padding-bottom: 116px;
+}
+.information__inner h2 {
+  letter-spacing: 4.5px;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  width: 490px;
+}
+.information__inner p {
+  margin-top: 42px;
+  width: 506px;
+  height: 180px;
+  color: #b7b7b7;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 3.45px;
+  margin-bottom: 48px;
+}
+.information__inner a {
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+}
+.fast {
+  text-align: center;
+  margin: 99px auto 99px auto;
+}
+.fast h2 {
+  color: #000;
+  font-size: 148px;
+  font-weight: 900;
+  text-transform: uppercase;
+  align-items: center;
+  padding-bottom: 58px;
+}
+.fast p {
+  color: #000;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+.fast__carts {
+  display: flex;
+  gap: 19px;
+  margin-top: 92px;
+}
+.fast__cart {
+  background: #fff;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+  padding: 31px 42px 26px 30px;
+  min-width: 386px;
+  text-align: left;
+}
+.fast__cart p {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+}
+
+.fast__cart span {
+  color: #b7b7b7;
+  font-size: 18px;
+  font-weight: 400;
+  flex-wrap: wrap;
+}
+.footer {
+}
+.contact {
+  background: #171616;
+}
+.contact__inner {
+  padding: 97px 0 97px;
+  text-align: left;
+}
+.contact__inner-us h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 150%; /* 45px */
+  letter-spacing: 4.5px;
+  text-transform: uppercase;
+  margin-bottom: 46px;
+}
+.user {
+  background-color: #171616;
+  border-bottom: 1px solid white;
+  width: 197px;
+  margin-right: 46px;
+  margin-bottom: 45px;
+}
+.contact__inner-lastUser {
+  position: relative;
+}
+
+.iphone::before {
+  content: "Phone";
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.contact__inner-massage {
+  margin-top: 9px;
+  display: inline-block;
+}
+.contact__inner-massage span {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 150%; /* 22.5px */
+  letter-spacing: 2.25px;
+}
+.contact__inner-text input {
+  background: #171616;
+  padding-top: 109px;
+  border-bottom: 1px solid white;
+  min-width: 440px;
+}
+.contact__button {
+  margin-top: 37px;
+}
+.contact__button button {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 11px 75px;
+  background: #db2512;
+}
+.end__footer {
+  margin: 66px auto 61px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.end__footer-dateSin p{
+  color: #000;
+font-size: 15px;
+font-weight: 400;
+line-height: 150%; 
+letter-spacing: 2.25px;
+}
